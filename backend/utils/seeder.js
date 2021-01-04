@@ -1,11 +1,11 @@
-const dotenv = require('dotenv');
 const bcrypt = require('bcryptjs');
 const connectDb = require('../config');
 
 const User = require('../models/user.model');
 const Todo = require('../models/todo.model');
 
-dotenv.config();
+require('dotenv').config();
+
 connectDb();
 
 const users = [
