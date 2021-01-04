@@ -1,7 +1,12 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
+const connectDb = require('./config');
+
 dotenv.config();
+
+connectDb();
+
 const app = express();
 
 app.use(express.json());
